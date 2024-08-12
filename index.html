@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finsy - Finance Made Easy</title>
-    <!-- bootstrap -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Additional CSS for AOS and Slick Carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <style>
+        .hero { padding: 60px 0; }
+        .client-box, .product-box, .reach-box { padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .footer { background-color: #343a40; }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="logo.png" alt="", height="100px">
-        <a class="navbar-brand" href="#">Finsy </a>
+        <a class="navbar-brand" href="#">Finsy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -38,34 +40,34 @@
             </ul>
         </div>
     </header>
-
+    
     <!-- Hero Section -->
     <section class="hero bg-light text-center">
         <div class="container">
             <img src="images/Illustration.png" alt="Finance Tools" class="img-fluid">
-            <h1 class="display-4">Finance made easy</h1>
+            <h1>Finance Made Easy</h1>
             <p class="lead">Manage your finances effortlessly with Finsy’s advanced tools.</p>
             <a href="#" class="btn btn-primary btn-lg">Get Started</a>
         </div>
     </section>
 
+    <!-- Clients Section -->
     <section class="clients py-5">
         <div class="container text-center">
-            <!-- <h2>Our Clients</h2> -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="client-box">
                         <h3>Consultancy</h3>
                         <p>Expert financial advice tailored to your needs.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="client-box">
                         <h3>Corporations</h3>
                         <p>Advanced tools to manage corporate finances.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="client-box">
                         <h3>Individuals</h3>
                         <p>Personal finance management made simple.</p>
@@ -74,37 +76,42 @@
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <img src="images/rafiki.png" alt="Finance Tools" class="img-fluid">
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <h2 class="text">Manage your entire Finance using Finsy’s tools</h2>
-                <p>Comprehensive solutions to manage all aspects of your finance, from personal budgets to corporate accounts.Take control of your financial future with Finsy! Our tools simplify budgeting, tracking expenses, and managing investments, giving you a clear view of your financial health. Streamline your money management with Finsy and make informed decisions for a brighter financial tomorrow."Empower yourself with Finsy’s comprehensive financial tools! Whether you're budgeting, saving, or investing, our intuitive platform provides real-time insights and smart recommendations to help you stay on top of your finances. Track your spending, set financial goals, and analyze your progress with ease. Finsy is your all-in-one solution for smarter money management—because your financial success starts with the right tools."
-                </p>
+
+    <!-- Finance Management Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <img src="images/rafiki.png" alt="Finance Tools" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text">Manage Your Entire Finance Using Finsy’s Tools</h2>
+                    <p>Comprehensive solutions to manage all aspects of your finance, from personal budgets to corporate accounts. Take control of your financial future with Finsy! Our tools simplify budgeting, tracking expenses, and managing investments, giving you a clear view of your financial health. Streamline your money management with Finsy and make informed decisions for a brighter financial tomorrow.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Products Section -->
     <section class="products py-5 bg-light">
         <div class="container text-center">
             <h2>Our Products</h2>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="product-box">
                         <img src="images/Icon (3).png" alt="Product 1" class="img-fluid">
                         <h3>Product One</h3>
                         <p>Manage your investments efficiently with our advanced tools.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="product-box">
-                        <img src="images/Icon (2).png"Product 2" class="img-fluid">
+                        <img src="images/Icon (2).png" alt="Product 2" class="img-fluid">
                         <h3>Product Two</h3>
                         <p>Optimize your savings and budget with Finsy.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="product-box">
                         <img src="images/Icon (1).png" alt="Product 3" class="img-fluid">
                         <h3>Product Three</h3>
@@ -115,34 +122,35 @@
         </div>
     </section>
 
+    <!-- Reach Section -->
     <section class="reach py-5">
         <div class="container text-center">
             <h2>Our Reach</h2>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="reach-box">
-                        <img src="images/client.png" alt="Product 3" class="img-fluid">
+                        <img src="images/client.png" alt="Clients" class="img-fluid">
                         <h3>2,483,341</h3>
                         <p>Clients</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="reach-box">
-                        <img src="images/user.png" alt="Product 3" class="img-fluid">
+                        <img src="images/user.png" alt="Projects" class="img-fluid">
                         <h3>46,258</h3>
                         <p>Projects</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="reach-box">
-                        <img src="images/my.png" alt="Product 3" class="img-fluid">
+                        <img src="images/my.png" alt="Revenue" class="img-fluid">
                         <h3>$29,687</h3>
                         <p>Revenue</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="reach-box">
-                        <img src="images/mf.png" alt="Product 3" class="img-fluid">
+                        <img src="images/mf.png" alt="Transactions" class="img-fluid">
                         <h3>1,024,436</h3>
                         <p>Transactions</p>
                     </div>
@@ -150,16 +158,20 @@
             </div>
         </div>
     </section>
-    <section class="testimonial py-5 bg-light">
-        <div class="container text-center">
-            <img src="images/pana.png" alt="">
-            <h2>How Finsy will help you in financial management</h2>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial py-5 bg-light text-center">
+        <div class="container">
+            <img src="images/pana.png" alt="Testimonial" class="img-fluid mb-4">
+            <h2>How Finsy Will Help You in Financial Management</h2>
             <p class="lead">"Finsy has transformed the way we handle our finances. It’s user-friendly, efficient, and the support team is always there when we need them!" - <strong>John Doe</strong></p>
             <a href="#" class="btn btn-primary btn-lg mt-4">Learn More</a>
         </div>
     </section>
-    <footer class="footer bg-dark text-white py-4">
-        <div class="container text-center">
+
+    <!-- Footer -->
+    <footer class="footer py-4 text-center text-white">
+        <div class="container">
             <p>&copy; 2024 Finsy. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
@@ -169,37 +181,6 @@
         </div>
     </footer>
 
-
-
-    
-    
-
-    <!-- Other sections (Clients, Products, etc.) will go here -->
-
-    <!-- Footer -->
-   
-
-
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Additional JS for AOS and Slick Carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-
-    <!-- Your Custom JS -->
-    <script src="js/script.js"></script>
-
-    <script>
-        // Initialize AOS
-        AOS.init();
-
-        // Example slick carousel initialization
-        $('.your-class').slick({
-            settingName: settingValue
-        });
-    </script>
-
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.
